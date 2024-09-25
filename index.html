@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="styles.css">
+    <title>Password generator</title>
+</head>
+
+<body>
+    <div class="top-info">
+        <h1>Generate a <br> random password</h1>
+        <h4>Never use an insecure password again</h4>
+        <button id="genPassword" onclick="genPassword()">Generate passwords</button>
+    </div>
+    <div class = "swip">
+        <label>Symbol</label>
+        <label class="switch">
+            <input type="checkbox" id="symbol-el">
+            <span class="slider round"></span>
+          </label>
+            <label>Numbers</label>
+            <label class="switch">
+                <input type="checkbox" id="number-el">
+                <span class="slider round"></span>
+              </label>
+            </div>
+        </div>
+    <div class="border"></div>
+    <div class="result">
+        <p id="firstPw"></p>
+        <p id="secPw"></p>
+    </div>
+    <button class ="copyPw" onclick="copyBothPasswords()">Copy passwords</button>
+</body>
+<script src="script.js"></script>
+</html>
